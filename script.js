@@ -1,16 +1,5 @@
-
-
-window.addEventListener('load', ()=>{
-
-    if (navigator.geolocation){
-        navigator.geolocation.getCurrentPosition(curentposition => {
-            console.log(currentposition)
-        })
-
-function getApi (requestUrl) {
-    var requestUrl = 'https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}'
-}
-fetch(requestUrl)
-.then (function (response) {
-    return response.json();
-})
+const form= document.querySelector(".Header");
+form.addEventListener("submit", e => {e.preventDefault();
+const inputVal = input.value;
+});
+const apiKey= "0e0021a41163b5dc5b4c2495efeda20a"

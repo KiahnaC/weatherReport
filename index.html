@@ -11,15 +11,31 @@
     <title>Weather Dashboard</title>
 </head>
 <body>
-  <div class="location">
-<h1 class="timezone">Timezone</h1>
-<p1>Icon</p1>
-
-<div class="temperature"></div>
-<h2 class="temp-degree">34</h2>
-<div class="temp-description">It's Cold 🥶!</div>
-
-  </div>
-    
+  <section class="top-header">
+    <div class="container">
+      <h1 class="heading">Weather Dashboard</h1>
+      <form>
+        <input type="text" placeholder="Search..." autofocus>
+        <button type="submit">Enter</button>
+        <span class="msg"></span>
+      </form>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <ul class="cities"></ul>
+    </div>
+  </section>
+  <li class="city">
+    <h2 class="city-name" data-name="...">
+      <span>...</span>
+      <sup>...</sup>
+    </h2>
+    <span class="temp">...<sup>°F</sup></span>
+    <figure>
+      <img class="icon" src="..." alt="...">
+      <figcaption>...</figcaption>
+    </figure>
+  </li>
 </body>
 </html>
