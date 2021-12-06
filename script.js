@@ -1,4 +1,4 @@
-const button = document.querySelector('.button');
+const button = document.getElementsByClassName('button');
 const inputValue = document.querySelector('.inputValue');
 const name = document.querySelector('.name');
 const temp = document.querySelector('.temp');
