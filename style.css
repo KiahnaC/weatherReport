@@ -12,7 +12,7 @@
   }
   
   /* Create two equal columns that floats next to each other */
-  .column {
+  .input {
     float: left;
     width: 25%;
     padding: 10px;
@@ -77,4 +77,4 @@
     color: var(--text_med);
     padding: 100px;
   }
-  
+ 
