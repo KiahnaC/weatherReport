@@ -76,3 +76,33 @@
     color: var(--text_med);
     padding: 100px;
   }
+
+
+
+
+
+
+
+
+  /* MQ */
+
+  
+@media only screen and (max-width: 1200px){
+
+}
+@media only screen and (max-width: 600px){
+
+}
+@media only screen and (max-width: 425px){
+
+}
+
+
+
+
+
+
+
+
+
+  

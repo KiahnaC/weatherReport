@@ -8,32 +8,29 @@
     <script
     src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src = "script.js"></script>
     <title>Weather Dashboard</title>
 </head>
 <body>
   <h1 class="heading">Weather Dashboard</h1>
-    <div class="input bg-secondary">
+  <div class="input bg-secondary">
   <input type="text" placeholder="Search..." class="inputValue">
-  <button class="button"type="submit">Enter</button>
-    </div>
-        <span class="msg"></span>
-     </section class="ajax-section">
+  <button Id="button"type="submit" value="Submit">Enter</button>
+</div>
+      <span class="msg"></span>
+      </section class="ajax-section">
       <div class="row">
       <div class=" column2 bg-primary">
-      <ul class= "cities"></ul>
-  <li class="city">
-    <h2 class="name" data-name="...">
-      <span>...</span>
-      <sup>...</sup>
-    </h2>
-    <span class="temp">...<sup>°F</sup></span>
-    <figure>
-      
-      <figcaption>...</figcaption>
-    </div>
-    </figure>
-</li>
+      <div class= "cities"></div>
+<div id="location">
+    <h1 class="name">City name</h2>
+    <p id='date'>December 11th 2021</p>
+    <script>
+    const d = new Date();
+    document.getElementById("date").innerHTML = d;
+    </script>
+<div class="temp">20<span>°F</span></div>
+<div class='description'>Cloudy</div>
 </div>
+<script src = "script.js"></script>
 </body>
 </html>
