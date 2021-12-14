@@ -1,6 +1,8 @@
+
+    
 const button = document.getElementById('button');
 const inputValue = document.querySelector('.inputValue');
-const name = document.querySelector('.name');
+const city = document.querySelector('.city');
 const temp = document.querySelector('.temp');
 const key = '&appid=0e0021a41163b5dc5b4c2495efeda20a'
 
@@ -10,20 +12,16 @@ const data = {
 
 if (button)
 {button.addEventListener('click', function(){
-fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&appid=0e0021a41163b5dc5b4c2495efeda20a', {
-})
+fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&appid=0e0021a41163b5dc5b4c2495efeda20a')
 .then(response => response.json()) 
-.then(data => console.log (data))
-.catch((err) => alert('Please enter a valid city name!'))
-});
-}
-function setPosition(position){
-    const latitude = position.coords.latitude;
-    const longitude = position.coords.longitude;
+.then(data => console.log(data))
 
-getWeather(latitude,longitude);
-}
+var nameValue= data.name
+var tempValue = Math.round(data.main.temp);
+var descriptionValue=date.weather[0].description
 
-function getWeather(latitude,longitude){
-    const api=`https://api.openweathermap.org/data/2.5/weather?$lat=${lattitude}&lon=${longitude}&appid=${key}`
+$('#city').innerHTML(city);
+$('#temp').innerHTML(temp);
+$('#description').innerHTML(description);
+})
 }
